@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    background-color: darkcyan;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
+h1 {
+    color: rgb(233, 24, 240);
+    width: fit-content ; 
+    border: 5px solid rgb(233, 24, 240);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+
+div {
+    border: 1px solid black;
+    width: 800px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
