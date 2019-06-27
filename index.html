@@ -4,27 +4,29 @@
         <title>Web Dev Study Guide</title>
         <link rel="stylesheet" href="main.css">
         <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     </head>
     <body>
         <h1>Web Dev Study Guide</h1>
         <div>
-            <h3>HTML</h3>
+            HTML
             <ul>
                 <li>Element Options</li>
                 <li>Accessability</li>
             </ul>
         </div>
         <div>
-            <h3>CSS</h3>
+            CSS
             <ul>
                 <li>Display Property</li>
                 <li>Position Property</li>
                 <li>Float Property</li>
                 <li>Flex Box</li>
+                <p>flex-wrap: wrap;</p>
             </ul>
         </div>
         <div>
-            <h3>JavaScript</h3>
+            JavaScript
             <ul>
                 <li>Variables and Datatypes</li>
                 <li>Functions</li>
@@ -33,24 +35,29 @@
             </ul>
         </div>
         <div>
-            <h3>Command Line</h3>
+            Command Line
             <ul>
                 <li>Basic Commands</li>
                 <li>Git Commands</li>
-                <li>New Project</li>
+                <li><a>New Project</a></li>
+                    <p>mkdir <i>name</i><br>touch index.html, main.css, script.js, README.md<br>git init<br>git add . <i>adds all files in the folder to be tracked</i><br>git commit -m '<i>note about commit</i><br>git remote add origin <i>copy http</i></p>
                 <li>Clone Project</li>
                 <li>Managing Branches</li>
+                    <p>git checkout -b <i>branch name</i>  ~~makes and takes you to new branch</p>
+                    <p>move to master branch<br>git merge <i>branch name</i><br>git push -u origin master</p>
                 <li>Pull Changes</li>
             </ul>
         </div>
         <div>
-            <h3>jQuery</h3>
+            jQuery
             <ul>
                 <li>Traversing Methods</li>
                 <li>Manipulation Methods</li>
                 <li>Event Listeners</li>
+                    <p>$('div').on('click', 'p', event=>{})<br>watch div for click on p</p>
                 <li></li>
             </ul>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>

@@ -15,8 +15,14 @@ h1 {
 
 div {
     border: 1px solid black;
-    width: 800px;
+    width: 400px;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
+}
+
+ul, p {
+    display: none;
+    border: 1px solid yellow;
 }
