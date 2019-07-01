@@ -5,9 +5,11 @@ $(document).ready(function(){
         $(event.target).children('ul').slideToggle('fast');
     });
 
-    $('li').on('click', 'a', event=>{
+    $('li').on('click', event=>{
+        event.stopPropagation();
         console.log ('li clicked');
-        $(event.target).children('p').slideToggle('fast');
+        /*$(this).closest('section').children('p').css({'color':'red'});*/
+        $(this).find('section').slideToggle('fast');
     })
 
 });

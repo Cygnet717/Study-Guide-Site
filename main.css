@@ -1,13 +1,19 @@
 * {
     box-sizing: border-box;
-    background-color: darkcyan;
     font-family: 'ZCOOL XiaoWei', serif;
 }
 
+html {
+    background: url('https://i.imgur.com/wmPwy29.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 h1 {
-    color: rgb(233, 24, 240);
     width: fit-content ; 
-    border: 5px solid rgb(233, 24, 240);
+    border: 5px solid black;
     margin-left: auto;
     margin-right: auto;
     padding: 40px;
@@ -22,7 +28,16 @@ div {
     cursor: pointer;
 }
 
-ul, p {
+.primary {
     display: none;
     border: 1px solid yellow;
+}
+
+.secondary {
+    display: none;
+    border: 1px solid red;
+}
+
+li {
+    border: 1px solid green;
 }
