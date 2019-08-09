@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $('div').on('click', function(){
+    /*$('div').on('click', function(){
         console.log ('div clicked');
         $(event.target).children('ul').slideToggle('fast');
     });
@@ -8,9 +8,9 @@ $(document).ready(function(){
     $('li').on('click', event=>{
         event.stopPropagation();
         console.log ('li clicked');
-        /*$(this).closest('section').children('p').css({'color':'red'});*/
+        /*$(this).closest('section').children('p').css({'color':'red'});
         $(this).find('section').slideToggle('fast');
-    })
+    })*/
 
 });
 

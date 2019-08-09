@@ -21,23 +21,12 @@ h1 {
 
 div {
     border: 1px solid black;
-    width: 400px;
+    width: 80%;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
-    cursor: pointer;
-}
-
-.primary {
-    display: none;
-    border: 1px solid yellow;
-}
-
-.secondary {
-    display: none;
-    border: 1px solid red;
 }
 
 li {
-    border: 1px solid green;
+    margin-bottom: 15px;
 }

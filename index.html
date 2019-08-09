@@ -11,62 +11,120 @@
         <div>
             <h2>HTML</h2>
             <ul class="primary">
-                <li>Element Options</li>
                 <li>Accessability</li>
-                <li>Forms</li>
-                <p><a href='https://www.w3schools.com/tags/tag_input.asp'>input</a><br>
-                <a href='https://www.w3schools.com/tags/tag_textarea.asp'>textarea ~rows and cols indicate how big the text area will be</a>
-                <br>button<br>select<br>option<br>optgroup<br>fieldset<br>label</p>
+                <li>Forms
+                    <p>Radios: [type='radio' name='' value='']<br>
+                        'name' makes only one select at a time
+                    </p>
+                    <p><a href='https://www.w3schools.com/tags/tag_input.asp'>input types</a>
+                        <br>
+                        <a href='https://www.w3schools.com/tags/tag_textarea.asp'>textarea </a>~rows and cols indicate how big the text area will be<br>
+                        button<br>
+                        select<br>
+                        option<br>
+                        optgroup<br>
+                        fieldset<br>
+                        label
+                    </p>
+                </li>
             </ul>
         </div>
         <div>
             <h2>CSS</h2>
             <ul class="primary">
-                <li>Display Property</li>
-                <li>Position Property</li>
-                <li>Float Property</li>
-                <li>Flex Box</li>
-                <p>flex-wrap: wrap;</p>
+                <li>Remove style on an anchor → text-decoration:none</li>
+                <li>Centering text:<br>
+                        horizontal -- text-align:center<br>
+                        verticle -- display:flex; justify-content: center<br>
+                        align-items: center<br>
+                        or<br>
+                        padding-top
+                </li>
+                <li>Media Query
+                    <p>@media screen and (min-width: 506px) and (max-width:1000px){}<br>
+                        @media screen and (mid-width: 1001px) {}</p>
+                </li>
+                <li>Display Property
+                    <p>flex - block level flex container<br>
+                    inline - displayed inline no height and width<br>
+                    inline-block - displayed inline has height and width<br>
+                    block - displayed on its own line has height and width<br>
+                    list-item - display like a li </p>
+                </li>
+                <li>Position Property
+                    <p>static - normal flow<br>
+                    fixed - with respect to window, other elements ignore it<br>
+                    relative - with respect to rendering position<br>
+                    absolute - with respect to last relative position<br>
+                    then set left right top bottom</p>
+                </li>
+                <li>Flex Box
+                    <p>flex-direction - determines main axis<br>
+                        row ↔ main axis<br>
+                        column ↕</p>
+                    <p>justify-content: (along main axis)<br>
+                        space between (widest)<br>
+                        space around  (mid)<br>
+                        space evenly  (closeset)<br>
+                        center<br>
+                        flex-start/end</p>
+                    <p>align-items: (along cross axis)<br>
+                        flex-start<br>
+                        felx-end<br>
+                        center</p>
+                    <p>align-self: (applies to individual item)<br>
+                        flex-start<br>
+                        felx-end<br>
+                        center</p>
+                    <p>flex-wrap: wrap;</p>
+                </li>
             </ul>
         </div>
         <div>
             <h2>JavaScript</h2>
             <ul class="primary">
-                <li>Variables and Datatypes</li>
+                <li>Variables and Datatypes
                 <p>Let and const have block scope, var had fucntion scope</p>
                 <p>ex: var b=8 <br>function {change b}<br>b is changed</p>
                 <p>let b=8 <br>function {change b}<br>b is still 8</p>
-                <li>Functions</li>
-                <li>Strings and Numbers</li>
-                <li>Arrays and Objects</li>
+                </li>
             </ul>
         </div>
         <div>
             Command Line
             <ul class="primary">
-                <li>Basic Commands</li>
-                <li>Git Commands</li>
-                <li>New Project</li>
-                    <section class="secondary">
-                        <p>mkdir <i>name</i><br>touch index.html, main.css, script.js, README.md<br>git init<br>git add . <i>adds all files in the folder to be tracked</i><br>git commit -m '<i>note about commit</i><br>git remote add origin <i>copy http</i></p>
-                    </section>
+                <li>New Project
+                    <p>mkdir <i>name</i><br>touch index.html, main.css, script.js, README.md<br>git init<br>git add . <i>adds all files in the folder to be tracked</i><br>git commit -m '<i>note about commit</i><br>git remote add origin <i>copy http</i></p>
+                </li>
                 <li>Clone Project</li>
-                <li>Managing Branches</li>
-                    <section class="secondary">                    
-                        <p>git checkout -b <i>branch name</i>  ~~makes and takes you to new branch</p>
-                        <p>move to master branch<br>git merge <i>branch name</i><br>git push -u origin master</p>
-                    </section>
+                <li>Managing Branches                   
+                    <p>git checkout -b <i>branch name</i>  ~~makes and takes you to new branch</p>
+                    <p>move to master branch<br>git merge <i>branch name</i><br>git push -u origin master</p>
+                </li>
                 <li>Pull Changes</li>
             </ul>
         </div>
         <div>
             <h2>jQuery</h2>
-            <ul class="primary">
+            <ul>
                 <li>Traversing Methods</li>
                 <li>Manipulation Methods</li>
-                <li>Event Listeners</li>
+                <li>Event Listeners
                     <p>$('div').on('click', 'p', event=>{})<br>watch div for click on p</p>
-                <li></li>
+                </li>
+                <li>Fetch<br>
+                    <p>fetch(URL)<br>
+                    .then(response =>{<br>
+                    if (response.ok){<br>
+                    return response.json();<br>
+                    }<br>
+                    throw new Error(response.statusText);<br>
+                    })<br>
+                    .then(responseJson => displayAppResults(responseJson))<br>
+                    .catch (err =>{<br>
+                    alert(`Something went wrong: ${err.message}`)<br>
+                    })</p>
+                </li>
             </ul>
         </div>
         <script src="script.js"></script>
