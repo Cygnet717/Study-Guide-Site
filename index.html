@@ -2,8 +2,10 @@
 <html lang="en">
     <head>
         <title>Web Dev Study Guide</title>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="main.css">
         <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     </head>
     <body>
@@ -11,7 +13,6 @@
         <div>
             <h2>HTML</h2>
             <ul class="primary">
-                <li>Accessability</li>
                 <li>Forms
                     <p>Radios: [type='radio' name='' value='']<br>
                         'name' makes only one select at a time
@@ -19,13 +20,24 @@
                     <p><a href='https://www.w3schools.com/tags/tag_input.asp'>input types</a>
                         <br>
                         <a href='https://www.w3schools.com/tags/tag_textarea.asp'>textarea </a>~rows and cols indicate how big the text area will be<br>
-                        button<br>
-                        select<br>
-                        option<br>
-                        optgroup<br>
-                        fieldset<br>
-                        label
                     </p>
+                    <p>target='_blank' open in new page</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2>A11y</h2>
+            <ul class="primary">
+                <li>&lta href='' title='go to this website'>visit website&lt/a></li>
+                <li>&lthtml lang='en'>&lt/html></li>
+                <li>&ltimg src='' alt='description of picture'></li>
+                <li>&ltform><br>
+                    &nbsp&nbsp&ltfieldset><br>
+                    &nbsp&nbsp&nbsp&nbsp&ltledgend>title of fieldset:&lt/ledgend><br>
+                    &nbsp&nbsp&nbsp&nbspfirst thing:&ltbr><br>
+                    &nbsp&nbsp&nbsp&nbsp&ltinput type='text' value='text to start in box' required><br>
+                    &nbsp&nbsp&lt/fieldset><br>
+                    &lt/form>
                 </li>
             </ul>
         </div>
@@ -34,48 +46,48 @@
             <ul class="primary">
                 <li>Remove style on an anchor → text-decoration:none</li>
                 <li>Centering text:<br>
-                        horizontal -- text-align:center<br>
-                        verticle -- display:flex; justify-content: center<br>
-                        align-items: center<br>
-                        or<br>
-                        padding-top
+                    &nbsp&nbsphorizontal -- text-align:center<br>
+                    &nbsp&nbspverticle -- display:flex; justify-content: center<br>
+                    &nbsp&nbspalign-items: center<br>
+                    &nbsp&nbspor<br>
+                    &nbsp&nbsppadding-top
                 </li>
                 <li>Media Query
                     <p>@media screen and (min-width: 506px) and (max-width:1000px){}<br>
                         @media screen and (mid-width: 1001px) {}</p>
                 </li>
                 <li>Display Property
-                    <p>flex - block level flex container<br>
-                    inline - displayed inline no height and width<br>
-                    inline-block - displayed inline has height and width<br>
-                    block - displayed on its own line has height and width<br>
-                    list-item - display like a li </p>
+                    <p>&nbsp&nbspflex - block level flex container<br>
+                    &nbsp&nbspinline - displayed inline no height and width<br>
+                    &nbsp&nbspinline-block - displayed inline has height and width<br>
+                    &nbsp&nbspblock - displayed on its own line has height and width<br>
+                    &nbsp&nbsplist-item - display like a li </p>
                 </li>
                 <li>Position Property
-                    <p>static - normal flow<br>
-                    fixed - with respect to window, other elements ignore it<br>
-                    relative - with respect to rendering position<br>
-                    absolute - with respect to last relative position<br>
-                    then set left right top bottom</p>
+                    <p>&nbsp&nbspstatic - normal flow<br>
+                        &nbsp&nbspfixed - with respect to window, other elements ignore it<br>
+                        &nbsp&nbsprelative - with respect to rendering position<br>
+                        &nbsp&nbspabsolute - with respect to last relative position<br>
+                        &nbsp&nbspthen set left right top bottom</p>
                 </li>
                 <li>Flex Box
                     <p>flex-direction - determines main axis<br>
-                        row ↔ main axis<br>
-                        column ↕</p>
+                        &nbsp&nbsprow ↔ main axis<br>
+                        &nbsp&nbspcolumn ↕</p>
                     <p>justify-content: (along main axis)<br>
-                        space between (widest)<br>
-                        space around  (mid)<br>
-                        space evenly  (closeset)<br>
-                        center<br>
-                        flex-start/end</p>
+                        &nbsp&nbspspace between (widest)<br>
+                        &nbsp&nbspspace around  (mid)<br>
+                        &nbsp&nbspspace evenly  (closeset)<br>
+                        &nbsp&nbspcenter<br>
+                        &nbsp&nbspflex-start/end</p>
                     <p>align-items: (along cross axis)<br>
-                        flex-start<br>
-                        felx-end<br>
-                        center</p>
+                        &nbsp&nbspflex-start<br>
+                        &nbsp&nbspfelx-end<br>
+                        &nbsp&nbspcenter</p>
                     <p>align-self: (applies to individual item)<br>
-                        flex-start<br>
-                        felx-end<br>
-                        center</p>
+                        &nbsp&nbspflex-start<br>
+                        &nbsp&nbspfelx-end<br>
+                        &nbsp&nbspcenter</p>
                     <p>flex-wrap: wrap;</p>
                 </li>
             </ul>
@@ -110,19 +122,21 @@
                 <li>Traversing Methods</li>
                 <li>Manipulation Methods</li>
                 <li>Event Listeners
-                    <p>$('div').on('click', 'p', event=>{})<br>watch div for click on p</p>
+                    <p>$('div').on('click', 'p', event=>{<br>
+                            event.preventDefault();<br>  
+                    })<br>watch div for click on p</p>
                 </li>
                 <li>Fetch<br>
                     <p>fetch(URL)<br>
-                    .then(response =>{<br>
-                    if (response.ok){<br>
-                    return response.json();<br>
+                    &nbsp&nbsp.then(response =>{<br>
+                    &nbsp&nbspif (response.ok){<br>
+                    &nbsp&nbspreturn response.json();<br>
                     }<br>
-                    throw new Error(response.statusText);<br>
+                    &nbsp&nbspthrow new Error(response.statusText);<br>
                     })<br>
-                    .then(responseJson => displayAppResults(responseJson))<br>
-                    .catch (err =>{<br>
-                    alert(`Something went wrong: ${err.message}`)<br>
+                    &nbsp&nbsp.then(responseJson => displayAppResults(responseJson))<br>
+                    &nbsp&nbsp.catch (err =>{<br>
+                    &nbsp&nbsp&nbsp&nbspalert(`Something went wrong: ${err.message}`)<br>
                     })</p>
                 </li>
             </ul>

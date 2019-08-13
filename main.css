@@ -27,6 +27,11 @@ div {
     margin-right: auto;
 }
 
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
 li {
     margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
 }
