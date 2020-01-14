@@ -1,16 +1,15 @@
 $(document).ready(function(){
+    $('.html').hide();
+    $('.psql').hide();
+    $('.a11y').hide();
+    $('.css').hide();
+    $('.js').hide();
+    $('.cl').hide();
+    $('.jq').hide();
 
-    /*$('div').on('click', function(){
-        console.log ('div clicked');
-        $(event.target).children('ul').slideToggle('fast');
+    $('button').on('click', function(){
+        $(`.${event.target.value}`).toggle()
     });
-
-    $('li').on('click', event=>{
-        event.stopPropagation();
-        console.log ('li clicked');
-        /*$(this).closest('section').children('p').css({'color':'red'});
-        $(this).find('section').slideToggle('fast');
-    })*/
 
 });
 

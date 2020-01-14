@@ -11,6 +11,13 @@ html {
     background-size: cover;
 }
 
+button{
+    background: none;
+    padding: 10px;
+    border: none;
+    
+}
+
 h1 {
     width: fit-content ; 
     border: 5px solid black;
