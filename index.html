@@ -142,18 +142,33 @@
                 <p>ex: var b=8 <br>function {change b}<br>b is changed</p>
                 <p>let b=8 <br>function {change b}<br>b is still 8</p>
                 </li>
+                <li>set variable state name to a value
+                    <p>let obj = {};
+                        <br>let key = <i>key</i>;
+                        <br>let value = <i>value</i>;
+                        <br>obj[key] = value;
+                        <br>setState(obj);
+                    </p>
+                </li>
             </ul>
         </div>
         <div>
             <button value='cl'>Command Line</button>
             <ul class="cl">
                 <li>New Project
-                    <p>mkdir <i>name</i><br>touch index.html, main.css, script.js, README.md<br>git init<br>git add . <i>adds all files in the folder to be tracked</i><br>git commit -m '<i>note about commit</i><br>git remote add origin <i>copy http</i></p>
+                    <p>mkdir <i>name</i>
+                        <br>touch index.html, main.css, script.js, README.md
+                        <br>git init
+                        <br>git add . <i>adds all files in the folder to be tracked</i>
+                        <br>git commit -m '<i>note about commit</i>
+                        <br>git remote add origin <i>copy http</i></p>
                 </li>
                 <li>Clone Project</li>
                 <li>Managing Branches                   
                     <p>git checkout -b <i>branch name</i>  ~~makes and takes you to new branch</p>
-                    <p>move to master branch<br>git merge <i>branch name</i><br>git push -u origin master</p>
+                    <p>when on sorce branch => git merge <i>branch name</i>
+                        <br>check all conflicts
+                    <br>git push -u origin master</p>
                 </li>
                 <li>Pull Changes</li>
             </ul>
