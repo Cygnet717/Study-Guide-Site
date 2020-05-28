@@ -215,6 +215,15 @@
                     (left is  specified in FROM clause and Right is specified in Join clause)
                 </li>
                 <li>
+                    CASE 
+                    &emsp;WHEN <br>
+                    &emsp;condition THEN<br>
+                    &emsp;bookings.slots*facilities.guestcost<br>
+                    &emsp;ELSE<br>
+                    &emsp;bookings.slots*facilities.membercost<br>
+                    END AS cost
+                </li>
+                <li>
                     SELECT DISTINCT (mem.firstname || ' ' || mem.surname) AS member, fac.name AS facility<br>
                     &emsp;FROM cd.members mem<br>
                     &emsp;INNER JOIN cd.bookings book<br>
