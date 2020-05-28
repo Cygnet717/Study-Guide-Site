@@ -198,6 +198,65 @@
                 </li>
             </ul class="jq">
         </div>
+        <div>
+            <button value='postgresql'>PostgreSQL</button>
+            <ul class='posttgresql'>
+                <li>
+                    JOIN<br>
+                    SELECT t1.colname, t2.col2name AS subName 
+                    FROM table1 t1<br>
+                    LEFT JOIN table2 t2<br>
+                    ON t1.columname = t2.columname <br>
+                    WHERE conditions
+                </li>
+                <li>
+                    Inner join - take left and right table and look for matching rows based on the ON condition<br>
+                    Left outer join - similar accept if a row on left doesnt match anything it still gets output<br>
+                    (left is  specified in FROM clause and Right is specified in Join clause)
+                </li>
+                <li>
+                    SELECT DISTINCT (mem.firstname || ' ' || mem.surname) AS member, fac.name AS facility<br>
+                    &emsp;FROM cd.members mem<br>
+                    &emsp;INNER JOIN cd.bookings book<br>
+                    &emsp;&emsp;ON book.memid = mem.memid <br>
+                    &emsp;INNER JOIN cd.facilities fac <br>
+                    &emsp;&emsp;ON book.facid = fac.facid <br>
+                    <br>
+                    WHERE fac.facid IN (0, 1)<br>
+                    ORDER BY member
+                </li>
+                <li>
+                    SELECT COUNT (colname), col2name<br>
+                    FROM tablename<br>
+                    GROUP BY col2name<br>
+                    ORDER BY COUNT (colname) DESC<br>
+                    --------<br>
+                    ORDER BY col1, col2
+                </li>
+                <li>
+                    MIN / MAX<br>
+                    SELECT MIN(colname)<br>
+                    FROM tablename<br>
+                    WHERE condition
+                </li>
+                <li>
+                    SELECT AVG(colname)<br>
+                    FROM tablename
+                </li>
+                <li>
+                    SELECT SUM(colname)<br>
+                    FROM tablename
+                </li>
+                <li>
+                    SELECT * FROM tablename<br>
+                    WHERE colname LIKE '%a%'<br>
+                    --------<br>
+                    WHERE colname NOT LIKE 'a%'<br>
+                    --------<br>
+                    WHERE colname BETWEEN 'name'or# AND 'name'or#
+                </li>
+            </ul>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
