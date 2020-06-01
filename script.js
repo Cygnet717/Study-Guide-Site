@@ -6,6 +6,7 @@ $(document).ready(function(){
     $('.js').hide();
     $('.cl').hide();
     $('.jq').hide();
+    $('.postgresql').hide();
 
     $('button').on('click', function(){
         $(`.${event.target.value}`).toggle()
