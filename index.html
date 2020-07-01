@@ -163,6 +163,56 @@
                         <br>git commit -m '<i>note about commit</i>
                         <br>git remote add origin <i>copy http</i></p>
                 </li>
+                <li>
+                    touch file{1,2,3,4}.txt  //to make all those files<br>
+                    {mf,tg,hrm,}  //makes a mf tg hrm and a blank<br>
+                    file{1..50}.txt //makes 50 files
+                </li>
+                <li>
+                    CTRL + A – takes you to the beginning of the line<br>
+                    CTRL + E – takes you to the end of the line<br>
+                    CTRL + K – "yank" everything after the cursor<br>
+                    CTRL + U – "yank" everything before the cursosr<br>
+                    CTRL + Y - "paste" (quotes because it doesn't go to your clipboard) everything you yanked<br>
+                    CTRL + L - clear the screen  === clear<br>
+                    CTRL + R – reverse search through history<br>
+                </li>
+                <li>
+                    NANO text editor<br>
+                    <br>
+                    &emsp;get in cd ~<br>
+                    &emsp;nano textfile.txt<br>
+                    &emsp;ctrl O to save<br>
+                    &emsp;ctrl x to exit
+                </li>
+                <li>
+                    vim text editor<br>
+                    <br>
+                    &emsp;i to edit text<br>
+                    &emsp;esc to get to command mode<br>
+                    &emsp;:w saves<br>
+                    &emsp;:q quits<br>
+                    &emsp;:wq save and quit<br>
+                    &emsp;:qa!  GET ME OUT
+                </li>
+                <li>
+                    less -- for reading files  (better for long files)<br>
+                    &emsp;less textfile.txt<br>
+                    &emsp;q to quit<br>
+                    &emsp;number and enter to get to that line<br>
+                    <br>
+                    man    for reading<br>
+                &emsp;man uses less<br>
+                &emsp;type man less to show the manual for less<br>
+                <br>
+                cat   is better for reading short files
+                </li>
+                <li>
+                    head/tail<br>
+                    &emsp;head for first lines<br>
+                    &emsp;tail for last lines<br>
+                    &emsp;tail -n 3 textfile.txt just 3 lines
+                </li>
                 <li>Clone Project</li>
                 <li>Managing Branches                   
                     <p>git checkout -b <i>branch name</i>  ~~makes and takes you to new branch</p>
